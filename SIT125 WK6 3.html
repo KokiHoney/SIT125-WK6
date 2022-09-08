@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<div id="app">
+  <h2>Are you a Deakin univercity student?</h2>
+  <label for="agree">
+    <input type="checkbox" id="agree" v-model="isAgree">Yes
+  </label>
+  <h3>Your Choice：{{isAgree}}</h3>
+  <button :disabled="!isAgree">Next Step</button>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js"></script>
+<script>
+  const app = new Vue({
+    el: '#app',
+    data: {
+      isAgree: true
+     
+    }
+  })
+</script>
+</body>
+</html>

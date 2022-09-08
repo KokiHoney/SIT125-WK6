@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+    <div id="app">
+        <select v-for="selected1">
+            <option disabled value="">Please choose one</option>
+            <option>A</option>
+            <option value="b">B</option>
+            <option>C</option>
+        </select>
+        <span>Your Choice</span>
+    </div>
+    <script>
+        var app = new Vue({
+            el: "#app",
+            data: {
+                selected1: "",
+            },
+        })
+    </script>
+</body>
+</html>    
